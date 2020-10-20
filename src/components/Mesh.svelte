@@ -7,8 +7,7 @@
     let stop
     let dots =[]
     const scl = 40
-    $: cols = w / scl
-    $: rows = h / scl  
+    let maxwell
     let resh 
     let resw 
             let c = 0;
@@ -18,15 +17,16 @@
         ctx = cx.getContext('2d')
         dpr = window.devicePixelRatio || 1;
         console.log(dpr)
-        resh = h * Math.min(dpr,1.5) + h/4
-        resw = w * Math.min(dpr,1.5) + w/4
+        maxwell = Math.max(h,w) * 1.5
+        resh = h * dpr + h/4
+        resw = w * dpr + w/4
 
         if(resh > resw) 
         resw = resh
         else
         resh=resw
         ctx.scale(dpr,dpr);
-        var max = Math.max(resw,resh) + 160
+         let max = Math.max(resw,resh) + 160
         for(let i = 0 ; i < max ; i++){
             let x =  max * Math.random()  ;
             let y =  max * Math.random()  ;
@@ -46,9 +46,9 @@
         clearInterval(stop)
        stop = setInterval(()=>{
             c+=.1
-        if(f)  cx.style=`transform:translate3d(-50%,-50%,0) rotate(${c}deg)`
+        if(f)  cx.style=`transform:translate3d(-50%,-50%,0) rotate(${c}deg) ;  height:${maxwell}px`
         else{
-   cx.style=`transform:translate3d(calc(-50% + ${(m.x)}px ),calc(-50% + ${(m.y)}px),0) rotate(${c}deg)`
+   cx.style=`transform:translate3d(calc(-50% + ${(m.x)}px ),calc(-50% + ${(m.y)}px),0) rotate(${c}deg); height:${maxwell}px`
    
         }
         },40)
@@ -101,11 +101,11 @@ function parallax(event){
         m.x = (event.clientX - w/2)/15;
         m.y = (event.clientY - h/2)/15;
 
-    cx.style=`transform:translate3d(calc(-50% + ${(m.x)}px ),calc(-50% + ${(m.y)}px),0) rotate(${c}deg)`
+    cx.style=`transform:translate3d(calc(-50% + ${(m.x)}px ),calc(-50% + ${(m.y)}px),0) rotate(${c}deg);  height:${maxwell}px`
 }
 </script>
 <svelte:window bind:innerWidth={w} bind:innerHeight={h} on:mousemove={parallax} />
-<canvas bind:this={cx} height={resh} width={resw} style={`transform:translate3d(-50%,-50%,0)`} >
+<canvas bind:this={cx} height={resh} width={resw} style={`transform:translate3d(-50%,-50%,0);  height:${maxwell}px`} >
 
 </canvas>
 
@@ -117,6 +117,7 @@ function parallax(event){
         top:50% ;
         animation: fader 3s forwards ease-in;
         opacity: 0;
+
     }
     @keyframes fader{
         to{

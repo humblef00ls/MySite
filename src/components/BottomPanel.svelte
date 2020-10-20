@@ -34,7 +34,7 @@
         <h2>Projects{#if subp != ""}/{subp}{/if}</h2>
         <article >
            
-                <Card name={"StockHub"} img={"stockhub.png"} url={"stockhub.app"} on:sub={handleSub} bind:maybe={subp} >
+                <Card name={"StockHub"} img={"stockhub.jpg"} url={"stockhub.app"} on:sub={handleSub} bind:maybe={subp} >
                 <p slot="desc">
                 StockHub is a free to use PWA that tracks daily tweets and Reddit posts for 8000 US securities, as well as options volume data
                 for 530 stocks every 5 minutes. It helps track short term trends in the market and thus helps retail investors with more information.
@@ -55,7 +55,7 @@
                             <br><br>
                 </p>
                 </Card>
-                <Card name={"Portfolio"} img={"thisite.png"} url={"aparimeya.xyz"} on:sub={handleSub} bind:maybe={subp}>
+                <Card name={"Portfolio"} img={"thisite.jpg"} url={"aparimeya.xyz"} on:sub={handleSub} bind:maybe={subp}>
                     <p slot="desc">
                         This is the cool space/tech themed portfolio you are looking at right now! 
                         <br><br>
@@ -65,7 +65,7 @@
                         <br><br>
                     </p>
                 </Card>
-                <Card name={"StudentSide"} img={"ssl.png"} url={"studentside.org"}  on:sub={handleSub} bind:maybe={subp}>
+                <Card name={"StudentSide"} img={"ssl.jpg"} url={"studentside.org"}  on:sub={handleSub} bind:maybe={subp}>
                     <p slot="desc">
                         This summer/start of fall, I was brought on as a freelancer to help integrate and finish up StudentSide's web platform. 
                         I worked with their exisiting team and built them APIs as needed. All of their infrastructure was
@@ -93,7 +93,7 @@
                     </p>
                     </Card>
 
-                <Card name={"ESSI"}  img={"nv.png"} url={"Classified Deployment"} on:sub={handleSub} bind:maybe={subp} >
+                <Card name={"ESSI"}  img={"nv.jpg"} url={"Classified Deployment"} on:sub={handleSub} bind:maybe={subp} >
                         <p slot="desc">
                         Worked on a realtime vehicle tracking platform as part of my internship. While my work was focused on remaking the broken and outdated 
                         UI, I also got to collaborate with senior devs and help with a Node.JS as well as a MySQL server. 
@@ -102,7 +102,7 @@
                         <br><br>
                     </p>
                     </Card>
-                <Card name={"Humblef00ls"} img={"hf.png"} url={"instagram.com/humblef00ls"}  on:sub={handleSub} bind:maybe={subp}>
+                <Card name={"Humblef00ls"} img={"hf.jpg"} url={"instagram.com/humblef00ls"}  on:sub={handleSub} bind:maybe={subp}>
                     <p slot="desc">
                        Since 2017 I have been creating digital art. It stared off as a hobby but soon became very relevant to 
                        all my school projects, as is ultimately what got me into web dev. 
@@ -125,7 +125,7 @@
                         <br><br>
                     </p>
                 </Card>
-                <Card name={"Duke Gaming"} img={"dg.png"} url={"facebook.com/dukeugaming"} on:sub={handleSub} bind:maybe={subp} >
+                <Card name={"Duke Gaming"} img={"dg.jpg"} url={"facebook.com/dukeugaming"} on:sub={handleSub} bind:maybe={subp} >
                         <p slot="desc">
                       I helped co-found Duke Gaming, Duke's first gaming and esports club. Since then I have been head of marketing and design.
                         <br><br> 

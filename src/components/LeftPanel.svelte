@@ -48,9 +48,12 @@
         height: 200px;
         width: 200px;
         border-radius: 50%;
-        margin-top: 15px;
-        margin-left:10px;
-        background-image: url("/levi.png");
+  margin-bottom: 10px;
+margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+
+        background-image: url("/levi.jpg");
         background-position: center;
         background-size: cover;
     }
@@ -81,5 +84,6 @@
         .panel{
                  width: 85vw;
         }
+
     }
 </style>
