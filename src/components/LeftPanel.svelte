@@ -23,7 +23,8 @@
         <h2>About</h2>
         <article >
         <div  class="pp"></div>
-            <p>Hi! I am Aparimeya Taneja. I am a junior at Duke University and am majoring in Computer Science!</p>
+            <p>Hi! I am Aparimeya Taneja. I am a junior at Duke University and am majoring in Computer Science! I am currently looking for internships for Summer 2021 in
+            SWE and Front End Dev.</p>
             <p> I love space, dogs, art (<a href="https://www.instagram.com/humblef00ls/"> @humblef00ls</a>), gaming, and most of all creating things! </p>
             <p>Check out all of my projects and works <a href="#projects">here</a>, and feel free to reach out <a href="#contact"> here</a>! </p>
             <p>My goal is to be able to empower as many people as possible with technology. 
