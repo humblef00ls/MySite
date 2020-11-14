@@ -79,16 +79,15 @@
                         <br><br>
                     </p>
                 </Card>
-                <Card name={"Aether"} url={"aether-five.vercel.app"} on:sub={handleSub} bind:maybe={subp}>
+                <Card name={"Aether"} url={"cryptotracker316.web.app"} on:sub={handleSub} bind:maybe={subp}>
                     <p slot="desc">
-                        Aether is a cryptocurrency paper trading platform that also allows for social interaction on all transacitons.
+                        Aether is a cryptocurrency paper trading platform that also allows for social interaction on all transacitons. Imagine venmo meets coinbase.
         
                         <br><br> 
-                        It is currently under developement and is the final group project for one of my classes. Normally I would not put a class
-                        project here but this class gave us full autonomy as to the tech stack we can use as well as what we can make. Stay tuned for updates!
+                       Normally I would not put a class project here but this class gave us full autonomy as to the tech stack we can use as well as what we can make. 
                         
                         <br><br>
-                        Technologies used: Svelte, Sapper, Python, GCP Functions, Firebase (Firestore, RTDB), Vercel.
+                        Technologies used: Svelte, Sapper, Python, Node, GCP Functions, Firebase (Firestore, RTDB), Vercel.
                         <br><br>
                     </p>
                     </Card>
