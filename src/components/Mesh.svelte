@@ -20,7 +20,6 @@
         maxwell = Math.max(h,w) * 1.5
         resh = h * dpr + h/4
         resw = w * dpr + w/4
-
         if(resh > resw) 
         resw = resh
         else
