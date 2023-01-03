@@ -46,6 +46,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
 </svelte:head>
+<div class="redi">pst... my new website is now at <a href="https://aparimeya.ai">aparimeya.ai</a></div>
 <main>
 	<Mesh />
 	<svg viewBox="0 0 626 68" fill="none" xmlns="http://www.w3.org/2000/svg" id="hello" bind:this={hw}>
@@ -100,6 +101,32 @@
 {/if}
 
 <style>
+.redi{
+ position:fixed;
+ top:0px;
+ width:100vw;
+ height:25px;
+ z-index:50;
+ background:white;
+ line-height:25px;
+ text-align:center;
+ color:black;
+}
+.redi a {
+	background: unset;
+	font-size:unset;
+	position:relative;
+	top:unset !important;
+	left:unset !important;
+	padding:0px;
+	display:inline;
+	letter-spacing:1px;
+	 color:grey;
+	 text-decoration:underline;
+}
+.redi a::before{
+	opacity:0;
+}
 .curtain{
 	background-color: rgba(0,0,0,.35);
 	position: fixed;
